@@ -1,0 +1,91 @@
+﻿@page
+@model BasketBallCardTrackerWeb.Pages.Cards.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Card</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Card.CardCollectionId)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Card.CardCollectionId)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Card.Season)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Card.Season)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Card.Box)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Card.Box)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Card.Insert)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Card.Insert)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Card.Player)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Card.Player)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Card.Serial)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Card.Serial)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Card.Parallel)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Card.Parallel)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Card.NumberedTo)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Card.NumberedTo)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Card.ActualNumber)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Card.ActualNumber)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Card.Seller)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Card.Seller)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Card.Quantity)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Card.Quantity)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Card.IMGUrl)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Card.IMGUrl)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Card.CardId">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

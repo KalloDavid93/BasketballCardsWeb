@@ -1,0 +1,89 @@
+﻿@page
+@model BasketBallCardTrackerWeb.Pages.Cards.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Card</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Card.CardCollectionId" class="control-label"></label>
+                <input asp-for="Card.CardCollectionId" class="form-control" />
+                <span asp-validation-for="Card.CardCollectionId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Card.Season" class="control-label"></label>
+                <input asp-for="Card.Season" class="form-control" />
+                <span asp-validation-for="Card.Season" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Card.Box" class="control-label"></label>
+                <input asp-for="Card.Box" class="form-control" />
+                <span asp-validation-for="Card.Box" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Card.Insert" class="control-label"></label>
+                <input asp-for="Card.Insert" class="form-control" />
+                <span asp-validation-for="Card.Insert" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Card.Player" class="control-label"></label>
+                <input asp-for="Card.Player" class="form-control" />
+                <span asp-validation-for="Card.Player" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Card.Serial" class="control-label"></label>
+                <input asp-for="Card.Serial" class="form-control" />
+                <span asp-validation-for="Card.Serial" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Card.Parallel" class="control-label"></label>
+                <input asp-for="Card.Parallel" class="form-control" />
+                <span asp-validation-for="Card.Parallel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Card.NumberedTo" class="control-label"></label>
+                <input asp-for="Card.NumberedTo" class="form-control" />
+                <span asp-validation-for="Card.NumberedTo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Card.ActualNumber" class="control-label"></label>
+                <input asp-for="Card.ActualNumber" class="form-control" />
+                <span asp-validation-for="Card.ActualNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Card.Seller" class="control-label"></label>
+                <input asp-for="Card.Seller" class="form-control" />
+                <span asp-validation-for="Card.Seller" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Card.Quantity" class="control-label"></label>
+                <input asp-for="Card.Quantity" class="form-control" />
+                <span asp-validation-for="Card.Quantity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Card.IMGUrl" class="control-label"></label>
+                <input asp-for="Card.IMGUrl" class="form-control" />
+                <span asp-validation-for="Card.IMGUrl" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
